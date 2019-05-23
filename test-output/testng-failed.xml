@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ TestNG SessionTest Automation Suite]">
+  <test name="Different TestNG Feature Test">
+    <classes>
+      <class name="com.test.com.test.ExceptionTimeoutTest"/>
+      <class name="com.test.com.test.GoogleTest"/>
+      <class name="com.test.com.test.GoogleTitleTest"/>
+      <class name="com.test.com.test.InvocationcountTest"/>
+    </classes>
+  </test> <!-- Different TestNG Feature Test -->
+  <test name="Different TestNG Feature Test(failed)">
+    <classes>
+      <class name="com.test.com.test.GoogleTest">
+        <methods>
+          <include name="test2"/>
+          <include name="mailLinkTest"/>
+          <include name="test3"/>
+          <include name="test1"/>
+          <include name="GoogleLogoTest"/>
+          <include name="GoogleTitleTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.test.com.test.GoogleTest -->
+      <class name="com.test.com.test.GoogleTitleTest">
+        <methods>
+          <include name="GoogleLogoTest"/>
+          <include name="GoogleTitleTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.test.com.test.GoogleTitleTest -->
+    </classes>
+  </test> <!-- Different TestNG Feature Test(failed) -->
+</suite> <!-- Failed suite [ TestNG SessionTest Automation Suite] -->
